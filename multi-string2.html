@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const name              = "Hidayatul Musrifah"; // ketika ingin memunculkan di browser maka memakai doc.written, ketika memunculkan di console maka memakai console
+        const firstName         = "Ifah";
+        const middleName        = "Hidayatul";
+        const LastName          = "Musrifah";
+        const template          = `Name : $(firstName) $(middleName) $(LastName)`;
+        const lama              = "Name : " + firstName + " " + middleName + " " + LastName;
+
+        console.info(template);
+
+        const nilai = 50;
+        const template2 = `Name : ${name}, Lulus : ${nilai > 70}`;
+
+        console.info(template2);
+
+        const multiline = `  
+Nama saya Hidayatul Musrifah,
+Sekarang mondok di Qoryatussalam,
+Tiduuuuuuuur terus heheheh,
+Kalau malem sukanya overthinking`;
+
+        document.writeln("<pre>");
+        document.writeln(multiline);
+        document.writeln("</pre>");
+
+    </script>
+
+</body>
+
+</html>
