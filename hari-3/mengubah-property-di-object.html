@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mengubah Property di Object</title>
+</head>
+<body>
+    <script>
+        const orang = {};
+
+        // menambah atau mengubah
+        orang["nama"] = "Hidayatul Musrifah";
+        orang["alamat"] = "Indonesia";
+        orang["umur"] = 22;
+
+        // //menghapus
+        delete orang["umur"];
+        console.table(orang);
+
+        // // membuat object dengan properties
+        const orang1 = {
+            nama: "Hidayatul Musrifah",
+            alamat: "Indonesia",
+            umur: 22
+        };
+        console.table(orang1);
+
+        const orang2 = {
+            'nama lengkap' : "Hidayatul Musrifah",
+            "no telp" : "08xxxxx",
+            alamat: "Indonesia",
+            umur: 22
+        };
+        // ubah property / attribute
+        let person          = {}
+        person["nama"]      = "Hidayatul Musrifah";
+        person["alamat"]    = "Indonesia"
+        person["umur"]      = 22;
+
+        console.info(`Nama : ${orang2["nama lengkap"]}`);
+        console.info(`No Telp : ${orang2['no telp']}`);
+        console.info(`Alamat : ${orang2.alamat}`);
+        console.info(`Umur : ${orang2.umur}`);
+
+        console.table(orang2);
+
+        delete orang2["umur"];
+
+        console.table(orang2);
+    </script>
+    
+</body>
+</html>

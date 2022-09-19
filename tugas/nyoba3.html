@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let nama = prompt('Input nama anda');
+        let nilai = prompt('Input Nilai Anda');
+
+        if (isNaN(nilai)) {
+            alert(" Jangan nakal ya " + nama + ", maaf nilai yang diinput tidak valid");
+        } else {
+            if (nilai > 80) { //percabangan banyak kondisi
+                document.writeln("<p>Hi " + nama + " nilaimu " + nilai + " jadi dapet : A</p>");
+            } else if (nilai > 70) {
+                document.writeln("<p>Hi " + nama + " nilaimu " + nilai + "jadi dapet : B</p>");
+            } else if (nilai < 60) {
+                document.writeln("<p>Hi " + nama + " nilaimu " + nilai + "jadi dapet : C</p>");
+            } else {
+                document.writeln("<p>Hi  "+ nama + " Nilaimu " + nilai + "jadi Try Again Next Year");
+            }
+    </script>
+</body>
+
+</html>

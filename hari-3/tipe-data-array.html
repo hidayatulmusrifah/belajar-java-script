@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipe Data Array</title>
+</head>
+
+<body>
+    <script>
+        let arrayKosong = [];
+
+        let arrayNama = ["Ifah", "Nazil", "Nihaya"];
+
+        console.table(arrayNama);
+
+        console.info(arrayNama[0]);
+        console.info(arrayNama[1]);
+        console.info(arrayNama[2]);
+
+        let siswa = [];
+        siswa[0] = 'Ifah';
+        siswa[2] = 'Nihaya';
+        siswa.push('Nazil'); // push berguna menambahkan isi array yg paling belakang
+        siswa.push('Ana');
+        siswa.push('A1', 'A2', 'A3'); // guna menambahkan lebih banyak 
+        siswa[2] = 'Fitra'; // tidak bisa menambahkan dengan angka yg sama akan tetapi mengubah nama siswa
+        siswa[20] = 'Vena';
+        console.table(siswa);
+        console.info(siswa.length); // untuk menghitung banyak siswa
+        // delete siswa[4]; // untuk menghapus value
+
+        console.table(siswa);
+        console.info(siswa);
+
+        siswa.sort(); // untuk mengurutkan berdasarkan abjad a-z
+
+        siswa.reverse(); // untuk mengurutkan berdasarkan abjad z-a
+    </script>
+</body>
+
+</html>
