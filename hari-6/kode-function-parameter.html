@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //membuat function dengan parameter dan return value
+        // function penjumlahan(angka1, angka2) {
+        //     return angka1 + angka2;
+        // }
+        // let hasil = penjumlahan(3, 5);
+        // document.writeln(hasil);
+
+        // latihan
+        // buatlah fungsi untuk menghitung nilai seorang Murid 
+
+        // jika nilainya 90 atau lebih, maka mendapatkan nilai A 
+        // jika nilainya 80 atau lebih, tapi tidak lebih besar dari 90 maka nilainya B 
+        // jika nilainya 70 atau lebih, tapi tidak lebih besar dari 70 maka nilainya C 
+        // jika nilainya 60 atau lebih, tpai tidak lebih besar dari 70 maka nilainya D 
+        // dibawah dari 60 maka nilainya E 
+
+        // output yang diharapkan:
+        // nilai saya 80 berarti nilainya adalah B 
+
+        //cara mbak titin
+        // function nilai() {
+        //     let inputNilai = prompt("berapa nilaimu?");
+        //     if (inputNilai >=90) {
+        //         document.writeln(`<p>nilai saya <b>${inputNilai}</b> berarti nilainya adalah <b>A</p>`);
+        //     } else if (inputNilai >= 80) {
+        //         document.writeln(`<p>nilai saya <b>${inputNilai}</b> berarti nilainya adalah <b>B</p>`);
+        //     } else if (inputNilai >= 70) {
+        //         document.writeln(`<p>nilai saya <b>${inputNilai}</b> berarti nilainya adalah <b>C</p>`);
+        //     } else if (inputNilai >= 60) {
+        //         document.writeln(`<p>nilai saya <b>${inputNilai}</b> berarti nilainya adalah <b>D</p>`);
+        //     } else {
+        //         document.writeln(`<p>nilai saya <b>${inputNilai}</b> berarti nilainya adalah <b>E</p>`);
+        //     }
+        // }
+        // nilai();
+
+        //cara pak ulul
+        // function convNilai(nilai) {
+        //     if (nilai > 90) {
+        //         return "A";
+        //     } else if (nilai >= 80) {
+        //         return "B";
+        //     } else if (nilai >= 70) {
+        //         return "C";
+        //     } else if (nilai >= 60) {
+        //         return "D";
+        //     } else {
+        //         return "E";
+        //     }
+        // }
+
+        // let inputNilai = prompt("Masukkan nilai anda");
+        // let hasil = convNilai(inputNilai);
+        // document.writeln(`Nilaimu adalah ${hasil}`);
+
+        //BUATKAN FUNCTION PAKAI RETURN MENAMPILKAN ANGKA DARI INPUTAN PERTAMA SAMPAI INPUTAN KEDUA
+
+        // function loopNilai(nilai1, nilai2) {
+        //     let hasil_perulangan ="";
+        //     for(nilai1; nilai1<=nilai2; nilai1++) {
+        //         hasil_perulangan += ` ${nilai1}`;
+        //     }
+        //     return hasil_perulangan;
+        // }
+        // let nilai1 = prompt("Masukkan dari nilai berapa?");
+        // let nilai2 = prompt("Masukkan sampai nilai berapa?");
+        // let hasil = loopNilai(nilai1, nilai2);
+        // document.writeln(`Hasilnya adalah : ${hasil}`);
+
+        // cara 2
+        function loopNilai(nilai1, nilai2) {
+            let hasil_perulangan = "";
+            nilai1 = parseInt(nilai1);
+            nilai2 = parseInt(nilai2);
+            for(nilai1; nilai1<=nilai2; nilai1++){
+                if(nilai1%2 != 0) {
+                    hasil_perulangan += ` ${nilai}`;
+                }
+                return hasil_perulangan;
+            }
+
+        }
+            let nilai1 = prompt("Masukkan dari nilai berapa?");
+            let nilai2 = prompt("Masukkan sampai nilai berapa?");
+            let hasil = loopNilai(nilai1, nilai2);
+            document.writeln(`Hasilnya adalah : ${hasil}`);
+
+        //cara mengetahui angka genap/ganjil yaitu memakai (angka%2)
+        // document.writeln(20%2);
+    </script>
+</body>
+
+</html>

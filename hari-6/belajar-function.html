@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //menghitung luas persegi
+    
+        function luasPersegi(sisi, sisi2) {
+            hasil = sisi * sisi2
+            document.writeln(`<p>luas persegi = <b>${hasil}</p>`);
+        }
+        let inputsisi = prompt("berapa panjang sisi persegi?")
+        let inputsisi2 = prompt("berapa lebar sisi2 persegi?")
+
+        luasPersegi(inputsisi, inputsisi2);
+        document.writeln("<br>");
+        luasPersegi(6,6);
+        luasPersegi(4,4)
+    </script>
+</body>
+
+</html>
