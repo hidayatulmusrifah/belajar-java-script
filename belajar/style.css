@@ -1,0 +1,20 @@
+body {
+    background-image: url(../tugas/goagong.png);
+}
+/* elemen css */
+h1{
+    color: yellow
+}
+/* id css */
+#judul_orange{
+    color: orange;
+}
+/* class css */
+.tebal_orange {
+    /* penggunaan warna biasa pakai rgba dan langsung, rgba opacity tidak dipisah */
+    color: orange;
+    background-color: blue;
+    opacity: 0,2;
+    font-weight: 700;
+    border:2 px solid yellow
+}
