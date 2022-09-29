@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Handling</title>
+</head>
+
+<body>
+    <script>
+        class MathUtil {
+            static sum(...numbers) {
+                if (number.length === 0) {
+                    throw new Error("total parameter harus lebih dari 0");
+                }
+
+                let total = 0;
+                for (const number of numbers) {
+                    total += number;
+                }
+                return total;
+            }
+        }
+
+        console.info(MathUtil.sum());
+        console.info("eko");
+
+        const result = MathUtil.sum(1, 1, 1, 1, 1);
+        console.info(result);
+
+        // try {
+        //     console.info(MathUtil.sum());
+        //     console.info("eko");
+        // } catch (error) {
+        //     console.info(`terjadi error : ${error.message}`)
+        // }
+
+        console.info("selesai ya")
+    </script>
+</body>
+
+</html>

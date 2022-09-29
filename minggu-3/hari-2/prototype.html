@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype</title>
+</head>
+
+<body>
+    <script>
+        // function Person(firstName, lastName) {
+        //     this.firstName = firstName;
+        //     this.lastName = lastName;
+        //     this.sayHello = function (name) {
+        //         console.info(`hello ${name}, my name is ${this.firstName}`);
+        //     }
+        // }
+
+        // Person.prototype.sayBye = function (){
+        //     console.info(`${this.firstName} is running`);
+        // }
+
+        // const eko = new Person("eko", "khannedy");
+        // const budi = new Person("budi", "nugraha");
+
+        // console.log(eko);
+        // console.log(budi);
+
+        // eko.sayBye();
+        // eko.run();
+
+        function Employee(name) {
+            this.name = name;
+        }
+
+        function Manager(name) {
+            this.name = name;
+        }
+
+        //manager.prototype = Employee.prototype; //salah
+        Manager.prototype = Object.create(Employee.prototype);
+
+        Manager.prototype.sayHello = function (name) {
+            console.info(`hello ${name}, my name is manager ${this.name}`);
+        }
+
+        Employee.prototype.sayHello = function (name) {
+            console.info(`hello ${name}, my name is employee ${this.name}`);
+        }
+
+        const employee = new Employee("budi");
+        employee.sayHello("joko");
+
+        const manager = new Manager("eko");
+        manager.sayHello("joko");
+
+        console.info(employee);
+        console.info(manager);
+    </script>
+</body>
+
+</html>
